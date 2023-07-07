@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/company_home"
+            android:icon="@drawable/admin_home"
+            android:title="Home"/>
+
+        <item android:id="@+id/add_buses"
+            android:title="Add Bus"
+            android:icon="@drawable/add_bus"/>
+
+        <item android:id="@+id/company_buses"
+            android:title="View/Edit Buses"
+            android:icon="@drawable/admin_buses"/>
+
+        <item android:id="@+id/company_booking"
+            android:title="View Booking"
+            android:icon="@drawable/admin_booking"/>
+
+        <item android:id="@+id/company_help"
+            android:title="Help"
+            android:icon="@drawable/admin_contact"/>
+
+        <item android:id="@+id/company_logout"
+            android:title="Log out"
+            android:icon="@drawable/admin_logout"/>
+    </group>
+</menu>

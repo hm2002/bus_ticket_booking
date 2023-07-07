@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".company_bus_update">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/destop">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="Modify Bus"
+            android:textSize="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/companySource"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColorHint="@color/white2"
+            android:textColor="@color/black"
+            android:hint="source"
+            android:textSize="25dp"
+            android:layout_below="@+id/txtAdd"/>
+
+        <EditText
+            android:id="@+id/companyDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="destination"
+            android:enabled="false"
+            android:textSize="25dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_below="@+id/companySource"/>
+
+        <EditText
+            android:id="@+id/companyPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ticket Price"
+            android:textSize="25dp"
+            android:inputType="number"
+            android:textColorHint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_below="@+id/companyDestination"/>
+
+        <EditText
+            android:id="@+id/companyClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="class"
+            android:enabled="false"
+            android:textSize="25dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="@color/black"
+            android:layout_below="@+id/companyPrice"/>
+
+        <EditText
+            android:id="@+id/departureTime"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="departure time"
+            android:textSize="25dp"
+            android:enabled="false"
+            android:textColorHint="#FFFFFF"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/companyClass"/>
+
+        <Button
+            android:id="@+id/departTime"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/companyClass"
+            android:layout_toRightOf="@+id/departureTime"
+            android:backgroundTint="#A5A7AF" />
+
+        <EditText
+            android:id="@+id/arrivalTime"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColorHint="#FFFFFF"
+            android:textColor="@color/black"
+            android:hint="arrival time"
+            android:textSize="25dp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/departureTime"/>
+
+        <Button
+            android:id="@+id/arriveTime"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/departureTime"
+            android:layout_toRightOf="@+id/arrivalTime"
+            android:backgroundTint="#A5A7AF" />
+
+        <Button
+            android:id="@+id/busRegister"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrivalTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</FrameLayout>

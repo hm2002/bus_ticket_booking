@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg_image1"
+    tools:context=".user_signup">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/reg"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_below="@+id/imageView"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:hint="Confirm Password"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password"/>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:inputType="phone"
+        android:layout_below="@+id/repassword"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/mobile"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:hint="Select Role"
+        android:textColorHint="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_textview"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/role"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Existing User!\nGo to Sign in Page"
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
